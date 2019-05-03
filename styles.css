@@ -1,0 +1,13 @@
+body { font-family: Lucida Console; }
+
+
+#matrix {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+body{
+  background-image: url("Pattern.jpg");
+ background-color: #cccccc;
+}

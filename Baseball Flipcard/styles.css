@@ -1,0 +1,52 @@
+body { font-family: sans-serif; }
+
+
+#matrix {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+.card {
+  width: 200px;
+  height: 250px;
+   border: 1px solid #CCC; 
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.position {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.draw {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  color: red;
+  text-align: center;
+  
+  backface-visibility: hidden;
+}
+
+.up {
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.down {
+  background: rgb(34, 34, 41);
+  transform: rotateY(180deg);
+  font-size: 10px;
+}
+
